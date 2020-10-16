@@ -14,9 +14,9 @@ class Principal extends CI_Controller {
 	public function index(){   
         $this->load->view("ingreso",array("error"=>""));
     }
-	function loginIntra(){
+	/*function loginIntra(){
 		$this->load->view("ingreso",array("error"=>""));
-	}
+	}*/
 	function loginIntra2(){
 		$rut 	= $this->input->post("rut");
 		$clave 	= $this->input->post("clave");
