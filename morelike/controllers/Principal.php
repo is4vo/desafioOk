@@ -5,13 +5,13 @@ class Principal extends CI_Controller {
 	var $cantidadBlog=5;
     public function __construct() {
         parent::__construct();
-        $this->load->model('Moelo');
+        $this->load->model('Modelo');
         $this->load->helper('url');
         //$cantidadBlog = 2;
         header("Content-Type: text/html; charset=utf-8");
         header("Accept-Encoding: gzip | compress | deflate | br| identity| * ");
     }
-	public function indes(){   
+	public function index(){   
         $this->load->view("ingreso",array("error"=>""));
     }
 	function loginIntra(){
