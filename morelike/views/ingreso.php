@@ -117,7 +117,7 @@
     <div id="footer">
       <div class="container" style="text-align:center; font-size:12px;">
         <p class="muted credit">
-        Developed by <a href="#">####</a></p>
+        Developed by <a href="#">Javiera Alejandra Cabrera Cruzat, Isavo Odemaris Castro Acuña</a></p>
       </div>
     </div>
   </body>
