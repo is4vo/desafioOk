@@ -1,5 +1,5 @@
 <?php
-class Modelo extends CIModel{
+class Modelo extends CI_Model{
     function loginIntra($ruty,$clave){
         $this->db->select("*");
         $this->db->where("rut",$rut);
