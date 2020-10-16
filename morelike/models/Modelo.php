@@ -1,6 +1,6 @@
 <?php
 class Modelo extends CI_Model{
-    function loginIntra($ruty,$clave){
+    function loginIntra($rut,$clave){
         $this->db->select("*");
         $this->db->where("rut",$rut);
         $this->db->where("clave",md5($clave));
