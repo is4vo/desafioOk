@@ -76,7 +76,7 @@
   <body>
 
     <div class="container">      
-      <form class="form-signin" id="loginForm" style="background-color: #128c7e; box-shadow: 10px 10px 10px 0px #dcf8c6; border: 1px solid #075e54;" method="post" action="Validar">
+      <form class="form-signin" id="loginForm" style="background-color: #128c7e; box-shadow: 10px 10px 10px 0px #dcf8c6; border: 1px solid #075e54;" method="post" action="<?php echo base_url()?>index.php/Principal/loginIntra2">
         <h3 class="text-center" style="color:white;">Desafio</h3>
         <input class="form-control" type="text" style="width: 100%;" placeholder="Rut" name="rut">
         <input class="form-control" type="password" style="width: 100%;" placeholder="Contraseña" name="clave">

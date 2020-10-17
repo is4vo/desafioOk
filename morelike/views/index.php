@@ -64,9 +64,9 @@
 	  		<div class="col-12">
 	  		<select id="selectCentros" onchange="entrarArea()" style="width: 100%;">
 	  			<option selected disabled></option>
-	  			<?for($i=0;$i<sizeof($this->session->userdata("areas"));$i++):?>
+	  			<?php for($i=0;$i<sizeof($this->session->userdata("areas"));$i++):?>
 	  				<option value="<?=$this->session->userdata("idAreas")[$i];?>"><?=$this->session->userdata("areas")[$i];?></option>
-	  			<?endfor;?>	
+	  			<?php endfor;?>	
 	  		</select>
 	  		</div>
 	  		<hr>
@@ -76,7 +76,7 @@
 				</button>
 				<hr>
 			</div>
-			<?if($this->session->userdata("super")=="Administrador"):?>
+			<?php if($this->session->userdata("super")=="Administrador"):?>
 				<div class="col-6">
 					<button class="btn btn-nuevo" style="width: 100%; height: 100px;" onclick="nuevaArea()">
 						<i class="fas fa-folder-plus fa-3x"></i>
@@ -102,7 +102,7 @@
 					<hr>
 				</div>
 
-			<?endif;?>
+			<?php endif;?>
 		</div>
 	</div>
 	<div class="container" id="contenedor" style="display: none;">
